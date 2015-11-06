@@ -1,0 +1,13 @@
+#input-fields input.textinput {
+  display: block;
+  width: 100%;
+  padding: 5px;
+}
+
+#datetime-value {
+  font-family: monospace;
+}
+
+#file-input-result img, #file-input-result video {
+  max-width: 100%;
+}

@@ -1,0 +1,8 @@
+#hammer-touch-target {
+  width: 60vmin;
+  height: 60vmin;
+  background: green;
+  position: absolute;
+  top: calc(50vh - 30vmin);
+  left: calc(50vw - 30vmin);
+}

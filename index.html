@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='css/main.css' rel='stylesheet'/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Mobile dev</title>
+  </head>
+  <body>
+    <div id='section-select-container'>
+      <div id='selector-arrow'>&#9660;</div>
+      <div id='section-label'></div>
+      <select id='section-selector'>
+        <option value='viewport-css'>Viewport CSS</option>
+        <option value='input-fields'>Input fields</option>
+        <option value='touch-events'>Simple touch events</option>
+        <option value='hammer-js'>Advanced touch: hammer.js</option>
+      </select>
+    </div>
+    <div id='panes'>
+
+
+      <div id='viewport-css'>
+        <link rel='stylesheet' href='css/viewport-css.css'/>
+        <h1>An Article</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam id quam nec magna imperdiet mattis id et risus.
+          Cras feugiat, ex quis congue condimentum, elit orci congue enim, ac tincidunt nulla ligula ut metus.
+          Fusce vitae ligula non purus laoreet efficitur. Integer urna dui, ullamcorper at dolor sit amet, rhoncus
+          laoreet erat. Praesent eget efficitur ligula. Vivamus id orci ac ipsum maximus aliquet et eu mauris.
+          Suspendisse tellus turpis, tristique id fringilla a, molestie quis ipsum.
+        </p>
+        <img src='https://c1.staticflickr.com/5/4031/4582801450_fd8de0cac0_z.jpg'/>
+        <p>
+          Nam aliquet erat vel sollicitudin ullamcorper. Phasellus in augue ac nunc scelerisque fringilla quis vel velit.
+           Praesent ultrices sit amet massa non egestas. Integer congue, magna eu lacinia euismod, elit diam hendrerit mauris,
+           sit amet vulputate eros erat eu sapien. Cras pellentesque vitae augue ut condimentum. Curabitur tincidunt urna massa,
+            nec laoreet sem laoreet in. Nam vestibulum sem id orci blandit, nec malesuada nisl malesuada.
+        </p>
+      </div>
+
+
+      <div id='input-fields'>
+        <link rel='stylesheet' href='css/input-fields.css'/>
+        <h1>Input fields</h1>
+        <h3>Text/number/email:</h3>
+        <p>
+          <!--
+            Possible text field types:
+              type='email'
+              type='tel'
+              type='number'
+              type='url' (iOS only)
+          -->
+          <input type='text' class='textinput'/>
+        </p>
+        <h3>Date inputs:</h3>
+        <p>
+          <!--
+            Possible date field types:
+              type='date'
+              type='time'
+              type='datetime' (iOS only)
+              type='month'
+          -->
+          <input type='date' id='datetime-input' class='textinput'/>
+          <p>The value of this datetime field is <span id='datetime-value'></span>.</p>
+        </p>
+        <h3>File inputs</h3>
+        <!--
+          Possible attributes:
+            multiple='multiple'
+            capture='capture' (Android only)
+        -->
+        <input type='file' id='file-input' />
+        <p>File(s) selected:</p>
+        <div id='file-input-result'></div>
+        <script src='js/input-fields.js'></script>
+      </div>
+
+      <div id='touch-events'>
+        <link rel='stylesheet' href='css/touch-events.css'/>
+        <h3>Tap delay</h3>
+        <button id='touch-test-button'>
+          This is a button.
+        </button>
+
+        <p>Last touchend event: <span id='last-touchend'></span></p>
+        <p>Last click event: <span id='last-click'></span></p>
+        <h3>Touch tracking</h3>
+
+        <div class='touch-target' id='simple-touch-target'></div>
+
+        <script src='js/lib/fastclick.js'></script>
+        <script src='js/touch-events.js'></script>
+    </div>
+
+    <div id='hammer-js'>
+      <link rel='stylesheet' href='css/advanced-touch.css'/>
+
+      <div id='hammer-touch-target'>
+
+      </div>
+
+      <script src='js/lib/hammer.js'></script>
+      <script src='js/advanced-touch.js'></script>
+    </div>
+    <script src='js/main.js'></script>
+  </body>
+</html>
