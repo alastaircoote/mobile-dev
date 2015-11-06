@@ -1,0 +1,14 @@
+#device-orientation th {
+  text-align: left;
+}
+
+#orientation-image-container {
+  width: 100vw;
+  overflow: hidden;
+  margin-left: -10px;
+}
+
+#orientation-image {
+  width: 140vw;
+  margin-left: -20vw;
+}

@@ -13,8 +13,10 @@
       <select id='section-selector'>
         <option value='viewport-css'>Viewport CSS</option>
         <option value='input-fields'>Input fields</option>
+        <option value='vibrate'>Vibration</option>
         <option value='touch-events'>Simple touch events</option>
         <option value='hammer-js'>Advanced touch: hammer.js</option>
+        <option value='device-orientation'>Device orientation</option>
       </select>
     </div>
     <div id='panes'>
@@ -77,6 +79,20 @@
         <script src='js/input-fields.js'></script>
       </div>
 
+      <div id='vibrate'>
+        <link rel='stylesheet' href='css/vibrate.css'/>
+        <h3>Basic vibration</h3>
+        <button id='vibrate-basic'>Vibrate</button>
+
+        <h3>Morse code</h3>
+        <textarea id='morse-text'>Hello world</textarea>
+        <button id='vibrate-start-morse'>Start Morse Code</button>
+        <button id='vibrate-stop-morse'>Stop</button>
+
+        <script src='js/lib/morse.js'></script>
+        <script src='js/vibrate.js'></script>
+      </div>
+
       <div id='touch-events'>
         <link rel='stylesheet' href='css/touch-events.css'/>
         <h3>Tap delay</h3>
@@ -104,6 +120,33 @@
       <script src='js/lib/hammer.js'></script>
       <script src='js/advanced-touch.js'></script>
     </div>
+
+    <div id='device-orientation'>
+      <link rel='stylesheet' href='css/device-orientation.css'/>
+      <h3>Device readings:</h3>
+      <table>
+        <tr>
+          <th>Alpha</th>
+          <td id='orientation-alpha'></td>
+        </tr>
+        <tr>
+          <th>Beta</th>
+          <td id='orientation-beta'></td>
+        </tr>
+        <tr>
+          <th>Gamma</th>
+          <td id='orientation-gamma'></td>
+        </tr>
+      </table>
+      <h3>Instant Article-style image:</h3>
+      <div id='orientation-image-container'>
+        <img src='https://c1.staticflickr.com/5/4031/4582801450_fd8de0cac0_z.jpg' id='orientation-image'/>
+      </div>
+      <script src='js/device-orientation.js'></script>
+    </div>
+
+
+
     <script src='js/main.js'></script>
   </body>
 </html>
