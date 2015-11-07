@@ -3,7 +3,7 @@ Mobile Dev Session
 
 To get started, install [Node](http://nodejs.org) and [Git](http://git-scm.com) (or just download the ZIP file of this repository).
 
-Run:
+Open your Terminal or Command Prompt and run:
 
     git clone git@github.com:alastaircoote/mobile-dev.git
 
