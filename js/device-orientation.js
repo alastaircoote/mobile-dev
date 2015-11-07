@@ -9,14 +9,6 @@
     orientationAlpha.innerHTML = ev.alpha;
     orientationBeta.innerHTML = ev.beta;
     orientationGamma.innerHTML = ev.gamma;
-
-    // 30 is our gamma limit, 20vw is our panning limit
-    var proportion = 30 / 20;
-    var val = Math.max(ev.gamma, -30);
-    val = Math.min(val, 30);
-    var amountToMove = val / proportion;
-
-    orientationImage.style.webkitTransform = orientationImage.style.transform = 'translate3d(' + amountToMove + 'vw,0,0)';
   };
 
   var startTrackingOrientation = function() {
